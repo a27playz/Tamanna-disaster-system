@@ -1,0 +1,166 @@
+<!--
+FUNNY TAMANNA WEBSITE 😂
+Project Structure:
+
+index.html
+page2.html
+page3.html
+page4.html
+page5.html
+
+Put these images in same folder:
+- tam1.jpg
+- tam2.jpg
+- tam3.jpg
+- abhimanyu.jpg
+
+Open index.html to start.
+--><!-- ================= INDEX.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Tamanna Madness Portal 🤪</title>
+<style>
+body{
+    background: linear-gradient(45deg, hotpink, yellow, cyan);
+    font-family: Comic Sans MS;
+    overflow-x:hidden;
+}h1{ text-align:center; font-size:60px; animation: shake 0.5s infinite; }
+
+@keyframes shake{ 0%{transform:translateX(0)} 25%{transform:translateX(10px)} 50%{transform:translateX(-10px)} 75%{transform:translateX(10px)} 100%{transform:translateX(0)} }
+
+.floating{ position:fixed; width:120px; animation: float 6s infinite linear; }
+
+@keyframes float{ from{top:100%} to{top:-150px} }
+
+.popup{ position:fixed; background:white; border:5px solid red; padding:20px; font-size:25px; display:none; }
+
+.button{ display:block; margin:30px auto; padding:20px; font-size:30px; background:lime; cursor:pointer; }
+
+.jumpscare{ position:fixed; top:0; left:0; width:100%; height:100%; background:black; display:none; justify-content:center; align-items:center; z-index:999; }
+
+.jumpscare img{ width:500px; }
+
+</style>
+</head>
+<body><h1>WELCOME TAMANNA 😂😂😂</h1><button class="button" onclick="scare()">DO NOT CLICK 😈</button>
+
+<center>
+<img src="tam1.jpg" width="300">
+<img src="tam2.jpg" width="300">
+<img src="tam3.jpg" width="300">
+</center><br><br>
+
+<center>
+<a href="page2.html"><button class="button">Enter Dora's Investigation 🔍</button></a>
+<a href="page3.html"><button class="button">Pokemon Attack ⚡</button></a>
+<a href="page4.html"><button class="button">Animal Madness 🐒</button></a>
+<a href="page5.html"><button class="button">Final Tamanna Roast 💀</button></a>
+</center><div class="popup" id="popup">Tamanna spotted eating snacks again 🍕</div><div class="jumpscare" id="jumpscare">
+<img src="https://i.imgur.com/Z7AzH2c.png">
+</div><img src="abhimanyu.jpg" class="floating" style="left:10%">
+<img src="abhimanyu.jpg" class="floating" style="left:50%">
+<img src="abhimanyu.jpg" class="floating" style="left:80%"><script>
+
+setTimeout(()=>{
+    let p=document.getElementById("popup");
+    p.style.display="block";
+    p.style.top=Math.random()*400+"px";
+    p.style.left=Math.random()*400+"px";
+},2000);
+
+function scare(){
+    document.getElementById("jumpscare").style.display="flex";
+    setTimeout(()=>{
+        document.getElementById("jumpscare").style.display="none";
+    },1000);
+}
+
+</script></body>
+</html><!-- ================= PAGE2.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Dora Searching Tamanna 🔍</title>
+<style>
+body{background:orange;font-family:Comic Sans MS;text-align:center}
+img{width:300px;animation:move 5s infinite linear}
+@keyframes move{
+0%{transform:translateX(-500px)}
+100%{transform:translateX(500px)}
+}
+</style>
+</head>
+<body>
+<h1>Dora is searching Tamanna 😂</h1>
+<img src="https://media.tenor.com/images/dora.gif">
+<br>
+<a href="index.html">Go Back</a>
+</body>
+</html><!-- ================= PAGE3.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Pokemon Madness ⚡</title>
+<style>
+body{background:yellow;text-align:center}
+.pokemon{
+position:absolute;
+width:150px;
+animation:jump 2s infinite
+}
+@keyframes jump{
+0%{top:400px}
+50%{top:100px}
+100%{top:400px}
+}
+</style>
+</head>
+<body>
+<h1>Pikachu attacking Tamanna ⚡😂</h1>
+<img src="https://media.tenor.com/pikachu.gif" class="pokemon" style="left:20%">
+<img src="https://media.tenor.com/pikachu.gif" class="pokemon" style="left:60%">
+<br><br>
+<a href="index.html">Escape</a>
+</body>
+</html><!-- ================= PAGE4.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Animal Madness 🐒</title>
+<style>
+body{background:lightgreen;text-align:center}
+.animal{
+position:absolute;
+width:120px;
+animation:run 4s infinite linear
+}
+@keyframes run{
+0%{left:-200px}
+100%{left:100%}
+}
+</style>
+</head>
+<body>
+<h1>Animals chasing Tamanna 😂</h1>
+<img src="https://media.tenor.com/monkey.gif" class="animal" style="top:200px">
+<img src="https://media.tenor.com/dog.gif" class="animal" style="top:400px">
+<br><br>
+<a href="index.html">Run Back</a>
+</body>
+</html><!-- ================= PAGE5.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Final Roast 💀</title>
+<style>
+body{background:black;color:white;text-align:center;font-size:40px}
+.laugh{
+animation:spin 2s infinite linear;
+width:200px;
+}
+@keyframes spin{
+from{transform:rotate(0deg)}
+to{transform:rotate(360deg)}
+}
+</style>
+</head>
+<body>
+<h1>Shinchan laughing at Tamanna 😂😂😂</h1>
+<img src="https://media.tenor.com/shinchan.gif" class="laugh">
+<br>
+YOU HAVE BEEN ROASTED 😈
+<br><br>
+<a href="index.html">Restart Madness</a>
+</body>
+</html>
